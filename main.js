@@ -75,51 +75,34 @@ if(keypressed =='39')
     right();
     console.log("right");
 }
-if(keypressed =='87')
+if(keypressed =='70')
 {
-    new_image('wall.jpg');
-    console.log("w");
+    new_image('ironman_face.png');
+    console.log("f");
 }
-if(keypressed =='71')
+if(keypressed =='66')
 {
-    new_image('ground.png');
-    console.log("g");
+    new_image('ironman_body.png');
+    console.log("b");
 }
 if(keypressed =='76')
 {
-    new_image('light_green.png');
+    new_image('ironman_legs.png');
     console.log("l");
 }
-if(keypressed =='84')
-{
-    new_image('trunk.jpg');
-    console.log("t");
-}
+
 if(keypressed =='82')
 {
-    new_image('roof.jpg');
+    new_image('ironman_right_hand.png');
     console.log("r");
 }
-if(keypressed =='89')
+if(keypressed =='72')
 {
-    new_image('yellow_wall.png');
-    console.log("y");
+    new_image('ironman_left_hand.png');
+    console.log("h");
 }
-if(keypressed =='68')
-{
-    new_image('dark_green.png');
-    console.log("d");
+
 }
-if(keypressed =='85')
-{
-    new_image('unique.png');
-    console.log("u");
-}
-if(keypressed =='67')
-{
-    new_image('cloud.png');
-    console.log("c");
-}}
 function up()
 {
     if(player_y >=0)
@@ -149,7 +132,7 @@ function left()
 }
 function right()
 {
-    if(player_x >=0)
+    if(player_x <=700)
     {
         player_x = player_x +block_image_width;
     canvas.remove(player_object);
